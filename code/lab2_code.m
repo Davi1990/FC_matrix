@@ -10,11 +10,11 @@ clear
 %% Matlab code:
 
 %% Loading Coregistered Data
-EPI = '/Volumes/NO NAME/01/fMRI/swaufmri.nii';
-parcels = '/Users/ariannamenardi/Documents/MATLAB/bertoldo/atlas/rGordon_parcels_2_T1.nii';
-malf = '/Users/ariannamenardi/Documents/MATLAB/bertoldo/atlas/rT1_3D_AnatomicalSegmentation.nii';
-parcels_list = '/Users/ariannamenardi/Documents/MATLAB/bertoldo/FC/code/Parcels.xlsx';
-moco_params = '/Volumes/NO NAME/01/fMRI/rp_fmri.txt';
+EPI = 'path_to_your_EPI_image.nii';
+parcels = 'path_to_/atlas/rGordon_parcels_2_T1.nii';
+malf = 'path_to_/atlas/rT1_3D_AnatomicalSegmentation.nii';
+parcels_list = 'path_to_/Parcels.xlsx';
+moco_params = 'path_to_your_moco_parameters/rp_fmri.txt';
 
 EPI     = load_untouch_nii(EPI);
 EPI     = double(EPI.img);
